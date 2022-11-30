@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color:darkred;
+        }
+        
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color:yellow;
+        }
+
+        /* Pseudo-elemento*/
+        /*a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        */
+        /*a::before {
+            content: '⇒ ';
+        }
+
+        a::after {
+            content: ' ⇐';
+        }
+        */
+        .especial::before {
+            content: '⇒ ';
+        }
+        .especial::after {
+            content: ' ⇐';
+
+        }
+        .especial {
+            background-color: darkred;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizar Links</h1>
+    <ul>
+        <li><a href="https://febomoniz-my.sharepoint.com/:f:/g/personal/rui_santos_ae-almeirim_pt/ElhzvoE6P-RPvUsKeX0eA-QBg_ZB38AxBBayMXj9DSQ5Mw?e=v5STkY" target="_blank">Repositório SI OneDrive</a></li>
+        <li><a href="https://febomoniz-my.sharepoint.com/:f:/g/personal/rui_santos_ae-almeirim_pt/Erg_mkxBXwhMmKkguE7XWhQBQbBT3gj-IoqHT3Kcl2KyPQ?e=boezE6" target="_blank" class="especial">Repositório SI M7-UFCD 9982 OneDrive</a></li>
+        <li><a href="https://login.microsoftonline.com/" target="_blank">Office 365 - Site da Escola</a></li>
+    </ul>
+</body>
+</html>
